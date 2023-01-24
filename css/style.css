@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  background: #e5e5e5;
+  font-family: "Inter";
+  /* font-style: normal; */
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+}
+
+.logo {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 9%;
+}
+
+main {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 80px;
+}
+
+.text-area {
+  border: none;
+  color: #0a3871;
+  margin-top: 90px;
+  text-transform: lowercase;
+  height: 280px;
+  font-family: "Oswald", sans-serif;
+}
+
+::placeholder {
+  color: #0a3871;
+}
+
+.text-area:focus {
+  outline: none;
+}
+
+.mensaje {
+  background: whitesmoke;
+  background-image: url(../img/Muñeco.png);
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 24px;
+  color: #0a3871;
+  margin-left: 98px;
+  margin-top: 20px;
+  padding-left: 20px;
+  position: fixed;
+}
+
+
+
+.mensaje:focus {
+  outline: none;
+  background-image: none;
+}
+
+.botones {
+  display: flex;
+  margin-top: 18px;
+}
+
+.brn-desencriptar {
+  background: #d8dfe8;
+  border: 1px solid black;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 30px;
+  width: 328px;
+}
+
+.brn-encriptar {
+  background-color: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: whitesmoke;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+}
+
+.copiar {
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 108px;
+  margin-top: 402px;
+  position: absolute;
+  width: 336px;
+  display: none;
+}
+
+.info {
+  color: #495057;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: block;
+  }
+
+  body {
+    width: 50%;
+  }
+  header {
+    transform: translate(0, 20px);
+  }
+
+  .text-area {
+    width: 610px;
+    height: auto;
+    font-size: 3.3vw;
+    text-align: center;
+    /* transform: translate(-30px);  */
+  }
+  .info {
+    font-size: 0.4em;
+    text-align: center;
+  }
+  .botones,
+  .brn-encriptar,
+  .brn-desencriptar
+   {
+    /* position: relative; */
+    height: 50px;
+    width: 327px;
+    margin: 1vw;
+    font-size: 2.6vw;
+    transform: translate(30%,10%);
+  }
+  .mensaje {
+    width: 14em;
+    height: 5em;
+    position: static;
+    background-image: none;
+    margin: 53px;
+    padding: 20px 10px;
+    
+  }
+}
