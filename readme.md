@@ -1,5 +1,5 @@
 # profile card
 
-this project is made with bootstrap 
-
+this project is a alura challenge
+ 
 ![project final](https://github.com/UpperErik/encriptador/blob/main/encriptador.png)
